@@ -1,0 +1,59 @@
+//- index.pug
+doctype html
+html
+  head
+    title Diwesh Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+       ul 
+         div#logo 
+            img(src="/static/img/mainLogo.png")
+            | DDA
+         li #[a(href="/") Home ]
+         li #[a(href="/") About ] 
+         li #[a(href="/") Services ] 
+         li #[a(href="/") Class Info ]
+         li #[a(href="/") Contact Us]
+
+    section#introsection 
+      div Welcome to Diwesh's Dance Academy 
+      div.small  Eat Dance Sleep Repeat
+
+    section#missionSection 
+      h2 Our Mission
+      div.card
+        h3 Dance Perfection
+        
+          div.card-img
+            img(src="/static/img/logo1.png")
+          div.card-content
+            p This is the best academy of the universe
+          
+      div.card
+        h3 Dance the way you like
+        
+          div.card-img
+            img(src="/static/img/logo2.png.png")
+          div.card-content
+            p This is the best academy of the universe
+      div.card
+        h3 Expert Teaching
+          div.card-img
+            img(src="/static/img/logo3.png")
+          div.card-content
+            p This is the best academy of the universe
+      
+    section#sponsorsSection 
+      h3  Our Sponsors 
+      div#sponsors
+        img(src="/static/img/sponsor1.png", alt="sponsor Image", class="spImage")
+        img(src="/static/img/sponsor2.png", alt="sponsor Image", class="spImage")
+        img(src="/static/img/sponsor3.png", alt="sponsor Image", class="spImage")
+
+    footer#footer 
+      | Copyright © 2021 DiweshAcademy.com | All Right Reserved
+
+    script
+      include ../static/index.js
